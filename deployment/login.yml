@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  name: "Login to DockerHub"
+  tasks:
+    docker_login:
+      username: "{{ docker_username }}"
+      password: "{{ docker_password }}"
+      email: "{{ docker_email }}"
